@@ -8,8 +8,8 @@ const LongForm = () => {
   const submit = (event) => {
     event.preventDefault();
 
+    console.log(state);
   };
-  console.log(state);
 
   return (
     <div className="h-screen w-screen flex justify-center items-center overflow-auto">
@@ -159,8 +159,8 @@ const LongForm = () => {
             <input
             className="text-lg pl-[50%]"
             type="text"
-            name="firstName"
-            id="firstName"
+            name="quantity"
+            id="quantity"
             value={state.quantity}
             onBlur={(e) =>
               dispatch({
